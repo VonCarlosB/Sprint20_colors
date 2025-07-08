@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import BoxColor from "./BoxColor";
+import DemoUseRef from "./Demo";
 
 function MyForm() {
   const inputRef = useRef(null)
@@ -12,6 +13,7 @@ function MyForm() {
 
   return (
     <>
+      <DemoUseRef />
       <input 
         type="text" 
         placeholder="Choose a color" 
