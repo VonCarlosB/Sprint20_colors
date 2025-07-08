@@ -8,9 +8,7 @@ function MyForm() {
 
   useEffect(() => {
     inputRef.current.focus()
-    setValue(inputRef.current.value)
-    console.log(value)
-  }, [value])
+  }, [])
 
   return (
     <>
@@ -22,9 +20,7 @@ function MyForm() {
         onChange={() => setValue(inputRef.current.value)}
       />
       <div className="container">
-        {colors.map(color => {
-          return <BoxColor key={color} color={color} value={value}/>
-        })}
+        {colors.map(color => <BoxColor key={color} color={color} value={value}/>)}
       </div>
     </>
   );
